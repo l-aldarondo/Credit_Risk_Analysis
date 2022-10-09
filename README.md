@@ -5,7 +5,7 @@ Using Supervise Machine Learning to Predict Credit Risk
 
 ### Overview of Analysis
 
-TThis new assignment consists of three technical analysis deliverables and a written report. You will submit the following:
+This project consists of three technical analysis deliverables and a written report.
 
 - Deliverable 1: Use Resampling Models to Predict Credit Risk
 
@@ -30,7 +30,7 @@ Data source:
 
 Software:
 
-- Google Colab, AWS RDS, pgAdmin 6.14, Visual Studio Code 1.71.2
+- Python 3.9.10, Jupyter Lab 4.6,  AWS RDS, Visual Studio Code 1.71.2
  
 <br/>
 
@@ -38,7 +38,7 @@ Software:
 
 ### D1: Use Resampling Models to Predict Credit Risk
 
-Using your knowledge of the imbalanced-learn and scikit-learn libraries, you’ll evaluate three machine learning models by using resampling to determine which is better at predicting credit risk. First, you’ll use the oversampling RandomOverSampler and SMOTE algorithms, and then you’ll use the undersampling ClusterCentroids algorithm. Using these algorithms, you’ll resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+Using the imbalanced-learn and scikit-learn libraries, we  evaluated three machine learning models by using resampling to determine which was better at predicting credit risk. First, we used the oversampling RandomOverSampler and SMOTE algorithms, and then we used the undersampling ClusterCentroids algorithm. Using these algorithms, we resampled the dataset, viewed the count of the targeted classes, trained a logistic regression classifier, calculated the balanced accuracy score, generated a confusion matrix, and generated a classification report.
 
 <br/>
 
@@ -52,7 +52,7 @@ We chose an [Amazon_reviews_dataset](https://s3.amazonaws.com/amazon-reviews-pds
 
 ### D2: Use the SMOTEENN algorithm to Predict Credit Risk
 
-CUsing your knowledge of the imbalanced-learn and scikit-learn libraries, you’ll use a combinatorial approach of over- and undersampling with the SMOTEENN algorithm to determine if the results from the combinatorial approach are better at predicting credit risk than the resampling algorithms from Deliverable 1. Using the SMOTEENN algorithm, you’ll resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+Using the imbalanced-learn and scikit-learn libraries, we used a combinatorial approach of over- and undersampling with the SMOTEENN algorithm to determine if the results from the combinatorial approach were better at predicting credit risk than the resampling algorithms from Deliverable 1. Using the SMOTEENN algorithm, we resampled the dataset, viewed the count of the targeted classes, trained a logistic regression classifier, calculated the balanced accuracy score, generated a confusion matrix, and generated a classification report.
 
 
 (b)![customer_id_table](./Images/customer_id_table.png)
@@ -63,7 +63,7 @@ CUsing your knowledge of the imbalanced-learn and scikit-learn libraries, you’
 
 ### D3: Use Ensemble Classifiers to Predict Credit Risk
 
-Using your knowledge of the imblearn.ensemble library, you’ll train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. Using both algorithms, you’ll resample the dataset, view the count of the target classes, train the ensemble classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+Using the imblearn.ensemble library, we train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. Using both algorithms, we resampled the dataset, viewed the count of the targeted classes, trained the ensemble classifier, calculated the balanced accuracy score, generated a confusion matrix, and generated a classification report.
 
 
 (c)![product_id_table](./Images/product_id_table.png)
