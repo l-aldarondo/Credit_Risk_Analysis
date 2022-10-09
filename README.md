@@ -5,26 +5,28 @@ Using Supervise Machine Learning to Predict Credit Risk
 
 ### Overview of Analysis
 
-This project consists of two technical analysis deliverables and a written report:
+TThis new assignment consists of three technical analysis deliverables and a written report. You will submit the following:
 
-- Deliverable 1: Perform ETL on Amazon Product Reviews
+- Deliverable 1: Use Resampling Models to Predict Credit Risk
 
-- Deliverable 2: Determine Bias of Vine Reviews
+- Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk
 
-- Deliverable 3: A Written Report on the Analysis (README.md)
+- Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
+
+- Deliverable 4: A Written Report on the Credit Risk Analysis (README.md)
 
 
 ### Purpose
 
-To analize Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
+Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Therefore, you’ll need to employ different techniques to train and evaluate models with unbalanced classes. Jill asks you to use imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling.
 
-In this project, we will choose 1 dataset from approximately 50 datasets. Then we will use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Then, use PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members in your dataset. 
+Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, you’ll oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, you’ll use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once you’re done, you’ll evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 
 ## Resources
 
 Data source:
 
-- (1) Amazon_Reviews_ETL_starter_code, (2) challenge_schema
+- (1) credit_risk_ensemble_starter_code, (2) credit_risk_resampling_starter_code, (3) LoanStats_2019Q1
 
 Software:
 
@@ -34,7 +36,9 @@ Software:
 
 ## Methodology
 
-### D1: Perform ETL on Amazon Product Reviews
+### D1: Use Resampling Models to Predict Credit Risk
+
+Using your knowledge of the imbalanced-learn and scikit-learn libraries, you’ll evaluate three machine learning models by using resampling to determine which is better at predicting credit risk. First, you’ll use the oversampling RandomOverSampler and SMOTE algorithms, and then you’ll use the undersampling ClusterCentroids algorithm. Using these algorithms, you’ll resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 
 <br/>
 
@@ -46,15 +50,9 @@ We chose an [Amazon_reviews_dataset](https://s3.amazonaws.com/amazon-reviews-pds
 
 <br/>
 
-### The customers_table DataFrame:
+### D2: Use the SMOTEENN algorithm to Predict Credit Risk
 
-Created the customers_table, using the code in the Amazon_Reviews_ETL_starter_code.ipynb file and following the steps below to aggregate the reviews by customer_id.
-
-- Used the groupby() function on the customer_id column of the DataFrame.
-
-- Counted all the customer ids using the agg() function by chaining it to the groupby() function. After we used this function, a new column was created, count(customer_id).
-
-- Rename the count(customer_id) column using the withColumnRenamed() function so it matches the schema for the customers_table in pgAdmin.
+CUsing your knowledge of the imbalanced-learn and scikit-learn libraries, you’ll use a combinatorial approach of over- and undersampling with the SMOTEENN algorithm to determine if the results from the combinatorial approach are better at predicting credit risk than the resampling algorithms from Deliverable 1. Using the SMOTEENN algorithm, you’ll resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 
 
 (b)![customer_id_table](./Images/customer_id_table.png)
@@ -63,58 +61,14 @@ Created the customers_table, using the code in the Amazon_Reviews_ETL_starter_co
 
 <br/>
 
-### The products_table DataFrame:
+### D3: Use Ensemble Classifiers to Predict Credit Risk
 
-To create the products_table, we used the select() function to select the product_id and product_title, then droped duplicates with the drop_duplicates() function to retrieve only unique product_ids.
+Using your knowledge of the imblearn.ensemble library, you’ll train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. Using both algorithms, you’ll resample the dataset, view the count of the target classes, train the ensemble classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 
 
 (c)![product_id_table](./Images/product_id_table.png)
  
 <sub> Figure (c) The final products_table DataFrame
-
-<br/>
-
-### The review_id_table DataFrame:
-
-To create the review_id_table, we used the select() function to select the columns that are in the review_id_table in pgAdmin and convert the review_date column to a date.
-
-
-(d)![review_id_table](./Images/review_id_table.png)
- 
-<sub> Figure (d) The final review_id_table DataFrame
-
-<br/>
-
-### The vine_table DataFrame:
-
-To create the vine_table, we used the select() function to select only the columns that are in the vine_table in pgAdmin
-
-
-(e)![vine_table](./Images/vine_table.png)
- 
-<sub> Figure (e) The final vine_table DataFrame
-
-<br/>
-
-### D2:Determine Bias of Vine Reviews
-
-Using PySpark:
-
-- Filtered the data and created a new DataFrame or table to retrieve all the rows where the total_votes count is equal to or greater than 20.
-
-- Filtered the new DataFrame or table created in Step 1 and created a new DataFrame or table to retrieve all the rows where the number of helpful_votes divided by total_votes is equal to or greater than 50%.
-
-- Filtered the DataFrame or table created in Step 2, and created a new DataFrame or table that retrieves all the rows where a review was written as part of the Vine program (paid), vine == 'Y'.
-
-- Repeat Step 3, but this time retrieved all the rows where the review were not part of the Vine program (unpaid), vine == 'N'.
-
-- Determined the total number of reviews, the number of 5-star reviews, and the percentage of 5-star reviews for the two types of review (paid vs unpaid), as shown in Figure (f).
-
-<br/>
-
-(f)![result_analysis](./Images/result_analysis.png)
- 
-<sub> Figure (f) Vine reviews analysis
 
 <br/>
 
