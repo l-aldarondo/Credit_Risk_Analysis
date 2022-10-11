@@ -88,7 +88,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/Clasification_Report_RandomOverSampler.png)
  
-<sub> Figure (1.3) Clasification_Report_RandomOverSampler
+<sub> Figure (1.3) RandomOverSampler imbalanced classification report
 
 <br/>
 
@@ -104,7 +104,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/SMOTE_balanced_accuracy_report.png)
  
-<sub> Figure (1.4) Amazon Dataset Schema example
+<sub> Figure (1.4) SMOTE balanced accuracy report
 
 <br/>
 
@@ -112,7 +112,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/SMOTE_confusion_matrix.png)
  
-<sub> Figure (1.5) Amazon Dataset Schema example
+<sub> Figure (1.5) SMOTE confusion matrix
 
 <br/>
 
@@ -120,7 +120,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/Clasification_Report_SMOTE%20Oversampling.png)
  
-<sub> Figure (1.6) Amazon Dataset Schema example
+<sub> Figure (1.6) SMOTE imbalanced classification report
 
 <br/>
 
@@ -136,7 +136,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/ClusterCentroids_balanced_accuracy_report.png)
  
-<sub> Figure (1.7) Amazon Dataset Schema example
+<sub> Figure (1.7) ClusterCentroids balanced accuracy report
 
 <br/>
 
@@ -144,7 +144,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/ClusterCentroids_confusion_matrix.png)
  
-<sub> Figure (1.8) Amazon Dataset Schema example
+<sub> Figure (1.8) ClusterCentroids_confusion_matrix
 
 <br/>
 
@@ -152,7 +152,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/Clasification_Repor_ClusterCentroids%20Undersampling.png)
  
-<sub> Figure (1.9) Amazon Dataset Schema example
+<sub> Figure (1.9) ClusterCentroids imbalanced classification report
 
 <br/>
 
@@ -170,7 +170,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/SMOTEEN_balanced_accuracy_report.png)
  
-<sub> Figure (1.10) Amazon Dataset Schema example
+<sub> Figure (1.10) SMOTEEN balanced accuracy report
 
 <br/>
 
@@ -178,7 +178,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/SMOTEENN_matrix.png)
  
-<sub> Figure (1.11) Amazon Dataset Schema example
+<sub> Figure (1.11) SMOTEENN matrix
 
 <br/>
 
@@ -186,7 +186,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/Clasification_Report_SMOTEENN.png)
  
-<sub> Figure (1.12) Amazon Dataset Schema example
+<sub> Figure (1.12) SMOTEENN imbalanced classification report
 
 <br/>
 
@@ -204,7 +204,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/BalancedRandomForestClassifier_balanced_accuracy_report.png)
  
-<sub> Figure (1.13) Amazon Dataset Schema example
+<sub> Figure (1.13) BalancedRandomForestClassifier balanced accuracy report
 
 <br/>
 
@@ -212,7 +212,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/BalancedRandomForestClassifier_matrix.png)
  
-<sub> Figure (n) Amazon Dataset Schema example
+<sub> Figure (n) BalancedRandomForestClassifier matrix
 
 <br/>
 
@@ -220,7 +220,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/Clasification_Report_BalancedRandomForestClassifier.png)
  
-<sub> Figure (1.14) Amazon Dataset Schema example
+<sub> Figure (1.14) BalancedRandomForestClassifier imbalanced classification report
 
 <br/>
 
@@ -228,7 +228,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/features_sorted_in_descending_order.png)
  
-<sub> Figure (1.15) Amazon Dataset Schema example
+<sub> Figure (1.15) features_sorted_in_descending_order
 
 <br/>
 
@@ -244,7 +244,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/EasyEnsembleClassifier_balanced_accuracy_report.png)
  
-<sub> Figure (1.16) Amazon Dataset Schema example
+<sub> Figure (1.16) EasyEnsembleClassifier balanced accuracy_ report
 
 <br/>
 
@@ -252,7 +252,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/EasyEnsembleClassifier_matrix.png)
  
-<sub> Figure (1.17) Amazon Dataset Schema example
+<sub> Figure (1.17) EasyEnsembleClassifier_matrix
 
 <br/>
 
@@ -260,7 +260,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ![amazon_dataset_example](./Images/Clasification_Report_EasyEnsembleClassifier.png)
  
-<sub> Figure (1.18) Amazon Dataset Schema example
+<sub> Figure (1.18) EasyEnsembleClassifier imbalanced classification report
 
 <br/>
 
