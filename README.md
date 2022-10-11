@@ -62,106 +62,106 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 #### RandomOverSampler
 
-- An accuracy score for the model is calculated
+- An accuracy score for the model is calculated:
 
-(a)![amazon_dataset_example](./Images/RandomOverSampler_balanced_accuracy_report.png)
+![amazon_dataset_example](./Images/RandomOverSampler_balanced_accuracy_report.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.1) RandomOverSampler balanced accuracy report
 
 <br/>
 
-- A confusion matrix has been generated
+- A confusion matrix has been generated:
 
-(a)![amazon_dataset_example](./Images/RandomOverSampler_matrix.png)
+![amazon_dataset_example](./Images/RandomOverSampler_matrix.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.2) RandomOverSampler matrix
 
 <br/>
 
-- An imbalanced classification report has been generated 
+- An imbalanced classification report has been generated:
 
-(a)![amazon_dataset_example](./Images/Clasification_Report_RandomOverSampler.png)
+![amazon_dataset_example](./Images/Clasification_Report_RandomOverSampler.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.3) Clasification_Report_RandomOverSampler
 
 <br/>
 
 #### SMOTE
 
-- An accuracy score for the model is calculated
+- An accuracy score for the model is calculated:
 
-(a)![amazon_dataset_example](./Images/SMOTE_balanced_accuracy_report.png)
+![amazon_dataset_example](./Images/SMOTE_balanced_accuracy_report.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.4) Amazon Dataset Schema example
 
 <br/>
 
-- A confusion matrix has been generated
+- A confusion matrix has been generated:
 
-(a)![amazon_dataset_example](./Images/SMOTE_confusion_matrix.png)
+![amazon_dataset_example](./Images/SMOTE_confusion_matrix.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.5) Amazon Dataset Schema example
 
 <br/>
 
-- An imbalanced classification report has been generated 
+- An imbalanced classification report has been generated:
 
-(a)![amazon_dataset_example](./Images/Clasification_Report_SMOTE%20Oversampling.png)
+![amazon_dataset_example](./Images/Clasification_Report_SMOTE%20Oversampling.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.6) Amazon Dataset Schema example
 
 <br/>
 
 #### ClusterCentroids
 
-- An accuracy score for the model is calculated
+- An accuracy score for the model is calculated:
 
-(a)![amazon_dataset_example](./Images/ClusterCentroids_balanced_accuracy_report.png)
+![amazon_dataset_example](./Images/ClusterCentroids_balanced_accuracy_report.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.7) Amazon Dataset Schema example
 
 <br/>
 
-- A confusion matrix has been generated
+- A confusion matrix has been generated:
 
-(a)![amazon_dataset_example](./Images/ClusterCentroids_confusion_matrix.png)
+![amazon_dataset_example](./Images/ClusterCentroids_confusion_matrix.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.8) Amazon Dataset Schema example
 
 <br/>
 
-- An imbalanced classification report has been generated 
+- An imbalanced classification report has been generated:
 
-(a)![amazon_dataset_example](./Images/Clasification_Repor_ClusterCentroids%20Undersampling.png)
+![amazon_dataset_example](./Images/Clasification_Repor_ClusterCentroids%20Undersampling.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.9) Amazon Dataset Schema example
 
 <br/>
 
 ### D2. The combinatorial SMOTEENN algorithm does the following:
 
 #### SMOTEENN
-- An accuracy score for the model is calculated
+- An accuracy score for the model is calculated:
 
-(a)![amazon_dataset_example](./Images/SMOTEEN_balanced_accuracy_report.png)
+![amazon_dataset_example](./Images/SMOTEEN_balanced_accuracy_report.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.10) Amazon Dataset Schema example
 
 <br/>
 
-- A confusion matrix has been generated
+- A confusion matrix has been generated:
 
-(a)![amazon_dataset_example](./Images/SMOTEENN_matrix.png)
+![amazon_dataset_example](./Images/SMOTEENN_matrix.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.11) Amazon Dataset Schema example
 
 <br/>
 
-- An imbalanced classification report has been generated
+- An imbalanced classification report has been generated:
 
-(a)![amazon_dataset_example](./Images/Clasification_Report_SMOTEENN.png)
+![amazon_dataset_example](./Images/Clasification_Report_SMOTEENN.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.12) Amazon Dataset Schema example
 
 <br/>
 
@@ -169,61 +169,61 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 #### BalancedRandomForestClassifier
 
-- An accuracy score for the model is calculated
+- An accuracy score for the model is calculated:
 
-(a)![amazon_dataset_example](./Images/BalancedRandomForestClassifier_balanced_accuracy_report.png)
+![amazon_dataset_example](./Images/BalancedRandomForestClassifier_balanced_accuracy_report.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.13) Amazon Dataset Schema example
 
 <br/>
 
 - A confusion matrix has been generated
 
-(a)![amazon_dataset_example](./Images/BalancedRandomForestClassifier_matrix.png)
+![amazon_dataset_example](./Images/BalancedRandomForestClassifier_matrix.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (n) Amazon Dataset Schema example
 
 <br/>
 
-- An imbalanced classification report has been generated
+- An imbalanced classification report has been generated:
 
-(a)![amazon_dataset_example](./Images/Clasification_Report_BalancedRandomForestClassifier.png)
+![amazon_dataset_example](./Images/Clasification_Report_BalancedRandomForestClassifier.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.14) Amazon Dataset Schema example
 
 <br/>
 
-- The features are sorted in descending order by feature importance
+- The features are sorted in descending order by feature importance:
 
-(a)![amazon_dataset_example](./Images/features_sorted_in_descending_order.png)
+![amazon_dataset_example](./Images/features_sorted_in_descending_order.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.15) Amazon Dataset Schema example
 
 <br/>
 
 #### EasyEnsembleClassifier
 
-- An accuracy score of the model is calculated
+- An accuracy score of the model is calculated:
 
-(a)![amazon_dataset_example](./Images/EasyEnsembleClassifier_balanced_accuracy_report.png)
+![amazon_dataset_example](./Images/EasyEnsembleClassifier_balanced_accuracy_report.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.16) Amazon Dataset Schema example
 
 <br/>
 
-- A confusion matrix has been generated
+- A confusion matrix has been generated:
 
-(a)![amazon_dataset_example](./Images/EasyEnsembleClassifier_matrix.png)
+![amazon_dataset_example](./Images/EasyEnsembleClassifier_matrix.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.17) Amazon Dataset Schema example
 
 <br/>
 
-- An imbalanced classification report has been generated
+- An imbalanced classification report has been generated:
 
-(a)![amazon_dataset_example](./Images/Clasification_Report_EasyEnsembleClassifier.png)
+![amazon_dataset_example](./Images/Clasification_Report_EasyEnsembleClassifier.png)
  
-<sub> Figure (a) Amazon Dataset Schema example
+<sub> Figure (1.18) Amazon Dataset Schema example
 
 <br/>
 
