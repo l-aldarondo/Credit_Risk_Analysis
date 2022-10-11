@@ -58,7 +58,9 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ## Results:
 
-### D1.1 For all three algorithms, the following have been completed:
+### D1. For all three algorithms, the following have been completed:
+
+#### RandomOverSampler
 
 - An accuracy score for the model is calculated
 
@@ -84,7 +86,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-### D1.2 For all three algorithms, the following have been completed:
+#### SMOTE
 
 - An accuracy score for the model is calculated
 
@@ -110,7 +112,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-### D1.3 For all three algorithms, the following have been completed:
+#### ClusterCentroids
 
 - An accuracy score for the model is calculated
 
@@ -138,6 +140,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ### D2. The combinatorial SMOTEENN algorithm does the following:
 
+#### SMOTEENN
 - An accuracy score for the model is calculated
 
 (a)![amazon_dataset_example](./Images/SMOTEEN_balanced_accuracy_report.png)
@@ -162,7 +165,9 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-### D3.1 The BalancedRandomForestClassifier algorithm does the following:
+### D3 The algorithm does the following:
+
+#### BalancedRandomForestClassifier
 
 - An accuracy score for the model is calculated
 
@@ -196,7 +201,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-#### D3.2 The EasyEnsembleClassifier algorithm does the following:
+#### EasyEnsembleClassifier
 
 - An accuracy score of the model is calculated
 
