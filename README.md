@@ -30,7 +30,7 @@ Data source:
 
 Software:
 
-- Python 3.9.10, Jupyter Lab 4.6,  AWS RDS, Visual Studio Code 1.71.2
+- Python 3.9.10, Jupyter Lab 4.6, Visual Studio Code 1.71.2
  
 <br/>
 
@@ -42,22 +42,10 @@ Using the imbalanced-learn and scikit-learn libraries, we  evaluated three machi
 
 <br/>
 
-We chose an [Amazon_reviews_dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) to be analyzed. All the datasets had the same schemata, as shown in this image below:
-
-(a)![amazon_dataset_example](./Images/amazon_dataset_example.png)
- 
-<sub> Figure (a) Amazon Dataset Schema example
-
-<br/>
 
 ### D2: Use the SMOTEENN algorithm to Predict Credit Risk
 
 Using the imbalanced-learn and scikit-learn libraries, we used a combinatorial approach of over- and undersampling with the SMOTEENN algorithm to determine if the results from the combinatorial approach were better at predicting credit risk than the resampling algorithms from Deliverable 1. Using the SMOTEENN algorithm, we resampled the dataset, viewed the count of the targeted classes, trained a logistic regression classifier, calculated the balanced accuracy score, generated a confusion matrix, and generated a classification report.
-
-
-(b)![customer_id_table](./Images/customer_id_table.png)
- 
-<sub> Figure (b) The customers_table DataFrame
 
 <br/>
 
@@ -65,52 +53,188 @@ Using the imbalanced-learn and scikit-learn libraries, we used a combinatorial a
 
 Using the imblearn.ensemble library, we train and compare two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluate each model. Using both algorithms, we resampled the dataset, viewed the count of the targeted classes, trained the ensemble classifier, calculated the balanced accuracy score, generated a confusion matrix, and generated a classification report.
 
-
-(c)![product_id_table](./Images/product_id_table.png)
- 
-<sub> Figure (c) The final products_table DataFrame
-
 <br/>
 
 
 ## Results:
-#### Refer to figure(f) above
 
-- Q1. How many Vine reviews and non-Vine reviews were there?
+### D1.1 For all three algorithms, the following have been completed:
 
-    - A1. There were **170** Vine reviews and **37,840** non_Vine reviews.
+- An accuracy score for the model is calculated
 
-- Q2. How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+(a)![amazon_dataset_example](./Images/RandomOverSampler_balanced_accuracy_report.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
 
-    - A2. There were **65** 5 star Vine reviews and **20,612** 5 star non-Vine reviews.
+<br/>
 
-- Q3. What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+- A confusion matrix has been generated
 
-    - A3. **38.24%** of the 5 star reviews were Vine and **54.47%** of 5 star reviews were non-Vine.
+(a)![amazon_dataset_example](./Images/RandomOverSampler_matrix.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- An imbalanced classification report has been generated 
+
+(a)![amazon_dataset_example](./Images/Clasification_Report_RandomOverSampler.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+### D1.2 For all three algorithms, the following have been completed:
+
+- An accuracy score for the model is calculated
+
+(a)![amazon_dataset_example](./Images/SMOTE_balanced_accuracy_report.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- A confusion matrix has been generated
+
+(a)![amazon_dataset_example](./Images/SMOTE_confusion_matrix.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- An imbalanced classification report has been generated 
+
+(a)![amazon_dataset_example](./Images/Clasification_Report_SMOTE%20Oversampling.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+### D1.3 For all three algorithms, the following have been completed:
+
+- An accuracy score for the model is calculated
+
+(a)![amazon_dataset_example](./Images/ClusterCentroids_balanced_accuracy_report.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- A confusion matrix has been generated
+
+(a)![amazon_dataset_example](./Images/ClusterCentroids_confusion_matrix.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- An imbalanced classification report has been generated 
+
+(a)![amazon_dataset_example](./Images/Clasification_Repor_ClusterCentroids%20Undersampling.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+### D2. The combinatorial SMOTEENN algorithm does the following:
+
+- An accuracy score for the model is calculated
+
+(a)![amazon_dataset_example](./Images/SMOTEEN_balanced_accuracy_report.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- A confusion matrix has been generated
+
+(a)![amazon_dataset_example](./Images/SMOTEENN_matrix.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- An imbalanced classification report has been generated
+
+(a)![amazon_dataset_example](./Images/Clasification_Report_SMOTEENN.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+### D3.1 The BalancedRandomForestClassifier algorithm does the following:
+
+- An accuracy score for the model is calculated
+
+(a)![amazon_dataset_example](./Images/BalancedRandomForestClassifier_balanced_accuracy_report.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- A confusion matrix has been generated
+
+(a)![amazon_dataset_example](./Images/BalancedRandomForestClassifier_matrix.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- An imbalanced classification report has been generated
+
+(a)![amazon_dataset_example](./Images/Clasification_Report_BalancedRandomForestClassifier.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- The features are sorted in descending order by feature importance
+
+(a)![amazon_dataset_example](./Images/features_sorted_in_descending_order.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+#### D3.2 The EasyEnsembleClassifier algorithm does the following:
+
+- An accuracy score of the model is calculated
+
+(a)![amazon_dataset_example](./Images/EasyEnsembleClassifier_balanced_accuracy_report.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- A confusion matrix has been generated
+
+(a)![amazon_dataset_example](./Images/EasyEnsembleClassifier_matrix.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
+
+- An imbalanced classification report has been generated
+
+(a)![amazon_dataset_example](./Images/Clasification_Report_EasyEnsembleClassifier.png)
+ 
+<sub> Figure (a) Amazon Dataset Schema example
+
+<br/>
 
 
 ## Summary
 
-Ho: 5star_vine = 5star_not_vine, there is no difference in the percenage(proportion) of 5star ratings paid(vine) vs unpaid(not vine).
-
-Ha: 5star_vine <> 5star_not_vine, there is a difference in the percenage(proportion) of 5star ratings paid(vine) vs unpaid(not vine).
-
-- percentage_5star_vine = **38.24%**
- 
-- percentage_5star_not_vine = **54.47%**
- 
-- **findings: the percentage of 5 star rating is not the same when comparing vine reviews to not_vine reviews**, figure (f).
- 
-- **There is reason to believe that the percentage of 5 star raitings is not directly tied to whether the review is paid or unpaid.**
- 
-- Additional analysis should be perform to evaluate the hypothesis test comparing the proportion of 5 star reviews among the two samples.
+- 
+- 
+- 
 
 
 ## References
 
 [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-[Spark](https://downloads.apache.org/spark/)
+[scikit-learn](https://scikit-learn.org/stable/)
  
-[Google Colab](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/01.01-Help-And-Documentation.ipynb)
+[imbalanced-learn](https://imbalanced-learn.org/stable/)
 
