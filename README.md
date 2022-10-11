@@ -60,9 +60,15 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ### D1. For all three algorithms, the following have been completed:
 
-#### RandomOverSampler
+#### Model: RandomOverSampler
 
-- An accuracy score for the model is calculated:
+#### Findings:
+
+- Balance accuracy score: **0.884**
+- Precision: high_risk **0.04**, low_risk **1.00**
+- F1: high_risk **0.07**, low_risk: **0.93**
+
+#### An accuracy score for the model is calculated:
 
 ![amazon_dataset_example](./Images/RandomOverSampler_balanced_accuracy_report.png)
  
@@ -70,7 +76,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- A confusion matrix has been generated:
+#### A confusion matrix has been generated:
 
 ![amazon_dataset_example](./Images/RandomOverSampler_matrix.png)
  
@@ -78,7 +84,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- An imbalanced classification report has been generated:
+ #### An imbalanced classification report has been generated:
 
 ![amazon_dataset_example](./Images/Clasification_Report_RandomOverSampler.png)
  
@@ -88,7 +94,13 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 #### SMOTE
 
-- An accuracy score for the model is calculated:
+#### Findings:
+
+- Balance accuracy score: **0.884**
+- Precision: high_risk **0.04**, low_risk **1.00**
+- F1: high_risk **0.07**, low_risk: **0.93**
+ 
+#### An accuracy score for the model is calculated:
 
 ![amazon_dataset_example](./Images/SMOTE_balanced_accuracy_report.png)
  
@@ -96,7 +108,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- A confusion matrix has been generated:
+#### A confusion matrix has been generated:
 
 ![amazon_dataset_example](./Images/SMOTE_confusion_matrix.png)
  
@@ -104,7 +116,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- An imbalanced classification report has been generated:
+#### An imbalanced classification report has been generated:
 
 ![amazon_dataset_example](./Images/Clasification_Report_SMOTE%20Oversampling.png)
  
@@ -113,8 +125,14 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 <br/>
 
 #### ClusterCentroids
+ 
+#### Findings:
 
-- An accuracy score for the model is calculated:
+- Balance accuracy score: **0.884**
+- Precision: high_risk **0.04**, low_risk **1.00**
+- F1: high_risk **0.07**, low_risk: **0.93**
+
+#### An accuracy score for the model is calculated:
 
 ![amazon_dataset_example](./Images/ClusterCentroids_balanced_accuracy_report.png)
  
@@ -122,7 +140,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- A confusion matrix has been generated:
+#### A confusion matrix has been generated:
 
 ![amazon_dataset_example](./Images/ClusterCentroids_confusion_matrix.png)
  
@@ -130,7 +148,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- An imbalanced classification report has been generated:
+#### An imbalanced classification report has been generated:
 
 ![amazon_dataset_example](./Images/Clasification_Repor_ClusterCentroids%20Undersampling.png)
  
@@ -141,7 +159,14 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 ### D2. The combinatorial SMOTEENN algorithm does the following:
 
 #### SMOTEENN
-- An accuracy score for the model is calculated:
+ 
+#### Findings:
+
+- Balance accuracy score: **0.884**
+- Precision: high_risk **0.04**, low_risk **1.00**
+- F1: high_risk **0.07**, low_risk: **0.93**
+ 
+#### An accuracy score for the model is calculated:
 
 ![amazon_dataset_example](./Images/SMOTEEN_balanced_accuracy_report.png)
  
@@ -149,7 +174,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- A confusion matrix has been generated:
+#### A confusion matrix has been generated:
 
 ![amazon_dataset_example](./Images/SMOTEENN_matrix.png)
  
@@ -157,7 +182,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- An imbalanced classification report has been generated:
+#### An imbalanced classification report has been generated:
 
 ![amazon_dataset_example](./Images/Clasification_Report_SMOTEENN.png)
  
@@ -168,8 +193,14 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 ### D3 The algorithm does the following:
 
 #### BalancedRandomForestClassifier
+ 
+#### Findings:
 
-- An accuracy score for the model is calculated:
+- Balance accuracy score: **0.759**
+- Precision: high_risk **0.03**, low_risk **1.00**
+- F1: high_risk **0.06**, low_risk: **0.94**
+
+ #### An accuracy score for the model is calculated:
 
 ![amazon_dataset_example](./Images/BalancedRandomForestClassifier_balanced_accuracy_report.png)
  
@@ -177,7 +208,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- A confusion matrix has been generated
+ #### A confusion matrix has been generated
 
 ![amazon_dataset_example](./Images/BalancedRandomForestClassifier_matrix.png)
  
@@ -185,7 +216,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- An imbalanced classification report has been generated:
+#### An imbalanced classification report has been generated:
 
 ![amazon_dataset_example](./Images/Clasification_Report_BalancedRandomForestClassifier.png)
  
@@ -193,7 +224,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- The features are sorted in descending order by feature importance:
+#### The features are sorted in descending order by feature importance:
 
 ![amazon_dataset_example](./Images/features_sorted_in_descending_order.png)
  
@@ -202,8 +233,14 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 <br/>
 
 #### EasyEnsembleClassifier
+ 
+#### Findings:
 
-- An accuracy score of the model is calculated:
+- Balance accuracy score: **0.932**
+- Precision: high_risk **0.03**, low_risk **1.00**
+- F1: high_risk **0.06**, low_risk: **0.94**
+
+#### An accuracy score of the model is calculated:
 
 ![amazon_dataset_example](./Images/EasyEnsembleClassifier_balanced_accuracy_report.png)
  
@@ -211,7 +248,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- A confusion matrix has been generated:
+ #### A confusion matrix has been generated:
 
 ![amazon_dataset_example](./Images/EasyEnsembleClassifier_matrix.png)
  
@@ -219,7 +256,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-- An imbalanced classification report has been generated:
+#### An imbalanced classification report has been generated:
 
 ![amazon_dataset_example](./Images/Clasification_Report_EasyEnsembleClassifier.png)
  
