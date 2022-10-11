@@ -60,7 +60,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ### D1. For all three algorithms, the following have been completed:
 
-#### Model: RandomOverSampler
+#### RandomOverSampler
 
 #### Findings:
 
