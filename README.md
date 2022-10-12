@@ -64,9 +64,10 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 #### Findings:
 
-- Balance accuracy score: **0.884**
-- Precision: high_risk **0.04**, low_risk **1.00**
-- F1: high_risk **0.07**, low_risk: **0.93**
+- Balance accuracy score: **0.832**
+- Precision: high_risk **0.03**, low_risk **1.00**
+- Recall: high_risk ***0.82**, low_risk **0.84**
+- F1: high_risk **0.06**, low_risk: **0.91**
 
 #### An accuracy score for the model is calculated:
 
@@ -97,7 +98,8 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 #### Findings:
 
 - Balance accuracy score: **0.884**
-- Precision: high_risk **0.04**, low_risk **1.00**
+- Precision: high_risk **0.03**, low_risk **1.00**
+- Recall: high_risk ***0.82**, low_risk **0.87**
 - F1: high_risk **0.07**, low_risk: **0.93**
  
 #### An accuracy score for the model is calculated:
@@ -129,7 +131,8 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 #### Findings:
 
 - Balance accuracy score: **0.884**
-- Precision: high_risk **0.04**, low_risk **1.00**
+- Precision: high_risk **0.03**, low_risk **1.00**
+- Recall: high_risk ***0.82**, low_risk **0.87**
 - F1: high_risk **0.07**, low_risk: **0.93**
 
 #### An accuracy score for the model is calculated:
@@ -163,7 +166,8 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 #### Findings:
 
 - Balance accuracy score: **0.884**
-- Precision: high_risk **0.04**, low_risk **1.00**
+- Precision: high_risk **0.03**, low_risk **1.00**
+- Recall: high_risk ***0.82**, low_risk **0.87**
 - F1: high_risk **0.07**, low_risk: **0.93**
  
 #### An accuracy score for the model is calculated:
@@ -190,7 +194,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 <br/>
 
-### D3 The algorithm does the following:
+### D3. The algorithm does the following:
 
 #### BalancedRandomForestClassifier
  
@@ -198,6 +202,7 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 - Balance accuracy score: **0.759**
 - Precision: high_risk **0.03**, low_risk **1.00**
+- Recall: high_risk ***0.63**, low_risk **0.88**
 - F1: high_risk **0.06**, low_risk: **0.94**
 
  #### An accuracy score for the model is calculated:
@@ -238,7 +243,8 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 - Balance accuracy score: **0.932**
 - Precision: high_risk **0.03**, low_risk **1.00**
-- F1: high_risk **0.06**, low_risk: **0.94**
+- Recall: high_risk **0.92**, low_risk **0.94**
+- F1: high_risk **0.16**, low_risk: **0.97**
 
 #### An accuracy score of the model is calculated:
 
@@ -267,9 +273,52 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ## Summary
 
-- 
-- 
-- 
+The program's accuracy score appears to be very good at 99.99%. However, it fails at its job, predicting high risk credit with 0 out of 10 fraudulent transactions, a success rate of 0%.
+
+The recall (sensitivity) for prediction of the high risk and low_risk are in line with each other for most of the models. However, the precision for predicting high risk is much lower than it is for predicting low risk. The lower precision for high risk is reflected in the dropped F1 score.
+
+In this scenario, the sensitivity is very high, while the precision is very low. Clearly, this is not a useful algorithm, so let's take a look at the F1 value. A pronounced imbalance between sensitivity and precision will yield a low F1 score. 
+
+
+The F1 values for our models:
+
+- RandomOverSampler - 0.06
+
+- SMOTE - 0.07
+
+- ClusterCentroids - 0.07
+
+- SMOTEENN - 0.07
+
+- BalancedRandomForestClassifier - 0.06
+
+- EasyEnsembleClassifier - **0.16**
+
+
+The accuracy scores for our models:
+
+- RandomOverSampler - 83.2
+
+- SMOTE - 88.4
+
+- ClusterCentroids - 88.4
+
+- SMOTEENN - 88.4
+
+- BalancedRandomForestClassifier - 75.9
+
+- EasyEnsembleClassifier - **93.2**
+ 
+To summarize our results, we'll focus on our targeted class (high_risk), out of the 6 models:
+ 
+- RandomOverSampler performed the worst with an F1 value of 0.06 (higher imbalance) and accuracy score of 83.2
+
+- EasyEnsembleClassifier performed the best with an F1 value of **0.16** (less imbalance) and accuracy score of **93.2**.
+ 
+In general the models were not very good at predicting high risk since the F1 values for most models were between 0.06-0.07. However, from our 6 models we would recommend the **EasyEnsembleClassifier** since the model did a better job classifying the data, improved the F1 value from 0.06 to **0.16**, and had a better accuracy score with **93.2%**.
+ 
+However, for future evaluations we may want to explore the use of Precision-Recall Curve to compare the model performances in imbalanced data sets. 
+
 
 
 ## References
