@@ -273,8 +273,6 @@ Using the imblearn.ensemble library, we train and compare two different ensemble
 
 ## Summary
 
-The program's accuracy score appears to be very good at 99.99%. However, it fails at its job, predicting high risk credit with 0 out of 10 fraudulent transactions, a success rate of 0%.
-
 The recall (sensitivity) for prediction of the high risk and low_risk are in line with each other for most of the models. However, the precision for predicting high risk is much lower than it is for predicting low risk. The lower precision for high risk is reflected in the dropped F1 score.
 
 In this scenario, the sensitivity is very high, while the precision is very low. Clearly, this is not a useful algorithm, so let's take a look at the F1 value. A pronounced imbalance between sensitivity and precision will yield a low F1 score. 
