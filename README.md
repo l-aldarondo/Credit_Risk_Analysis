@@ -278,9 +278,9 @@ The recall (sensitivity) for prediction of the high risk and low_risk are in lin
 In this scenario, the sensitivity is very high, while the precision is very low. Clearly, this is not a useful algorithm, so let's take a look at the F1 value. A pronounced imbalance between sensitivity and precision will yield a low F1 score. 
 
 
-The F1 values for our models:
+#### The F1 values for our models:
 
-- RandomOverSampler - 0.06
+- RandomOverSampler - **0.06**
 
 - SMOTE - 0.07
 
@@ -293,9 +293,9 @@ The F1 values for our models:
 - EasyEnsembleClassifier - **0.16**
 
 
-The accuracy scores for our models:
+#### The accuracy scores for our models:
 
-- RandomOverSampler - 83.2
+- RandomOverSampler - **83.2**
 
 - SMOTE - 88.4
 
@@ -309,7 +309,7 @@ The accuracy scores for our models:
  
 To summarize our results, we'll focus on our targeted class (high_risk), out of the 6 models:
  
-- RandomOverSampler performed the worst with an F1 value of 0.06 (higher imbalance) and accuracy score of 83.2
+- RandomOverSampler performed the worst with an F1 value of **0.06** (higher imbalance) and accuracy score of **83.2**.
 
 - EasyEnsembleClassifier performed the best with an F1 value of **0.16** (less imbalance) and accuracy score of **93.2**.
  
