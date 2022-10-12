@@ -315,7 +315,7 @@ To summarize our results, we'll focus on our targeted class (high_risk), out of 
  
 In general the models were not very good at predicting high risk since the F1 values for most models were between 0.06-0.07. However, from our 6 models we would recommend the **EasyEnsembleClassifier** since the model did a better job classifying the data, improved the F1 value from 0.06 to **0.16**, and had a better accuracy score with **93.2%**.
  
-However, for future evaluations we may want to explore the use of Precision-Recall Curve to compare the model performances in imbalanced data sets. 
+For future evaluations we may want to explore the use of Precision-Recall Curve to compare the model performances in imbalanced data sets. 
 
 
 
