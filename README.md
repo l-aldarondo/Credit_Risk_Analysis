@@ -1,6 +1,10 @@
 # Credit_Risk_Analysis
 Using Supervise Machine Learning to Predict Credit Risk
 
+![credit_risk](./Images/credit_risk.png)
+
+<sub>[Image source](https://media.microbilt.com/Cms_Data/Contents/MBNewsBlogs/Media/images/mbcom/MB-21820.png?width=730&height=335&mode=carve)
+
 ## Background
 
 ### Overview of Analysis
